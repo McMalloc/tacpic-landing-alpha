@@ -1,0 +1,16 @@
+@media only screen and (max-width: 1024px) {
+  p {
+    font-size: 12pt;
+  }
+
+  .wrapper {
+    margin: 12px;
+  }
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}

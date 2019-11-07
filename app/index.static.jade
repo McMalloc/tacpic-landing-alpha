@@ -1,0 +1,64 @@
+---
+title: tacpic -- ertastbare Grafiken für sehbehinderte Menschen
+_options:
+  layout: app/layouts/main.static.jade
+  partials:
+    - app/partials/claim.static.txt
+    - app/partials/intro.static.md
+    - app/partials/feature1.static.md
+    - app/partials/feature2.static.md
+    - app/partials/feature3.static.md
+    - app/partials/team.static.md
+    - app/partials/newsletter.static.jade
+    - app/partials/header.static.jade
+    - app/partials/more.static.md
+---
+
+| {{>header}}
+section.container
+    .row
+        .col-md-5
+            p.lead-p {{>claim}}
+            | {{>intro}}
+            p
+                button#show-more-btn Mehr erfahren
+        .col-md-7.iframe-container
+            iframe(title='vimeo-player', src='https://player.vimeo.com/video/330785558', width='100%', height='auto', frameborder='0', allowfullscreen='')
+    #show-more.row.hidden
+        .col-md-8.offset-md-2 {{>more}}
+section.container-fluid(style='padding: 0 15px;')
+    .row
+        img(src='img/eye.jpg')
+section.container
+    .row
+        .col-md-12
+            h2(style='text-align: center') tacpic bietet
+    .row
+        .col-md-4
+            .feature-image
+                img(src='img/circe.svg')
+            | {{>feature1}}
+        .col-md-4
+            .feature-image
+                img(src='img/circe.svg')
+            | {{>feature2}}
+        .col-md-4
+            .feature-image
+                img(src='img/circe.svg')
+            | {{>feature3}}
+section.container-fluid.accent(style='text-align: center; padding: 150px 15px;')
+    .row
+        .col-12
+            h2 Newsletter abonnieren
+            p Möchten Sie, dass wir Sie über den Start unseres Services informieren?
+                .col-md-6.col-sm-8.offset-md-3.offset-sm-2(style='text-align: left;')
+                    | {{>newsletter}}
+section.container
+    .row
+        .col-md-5
+            h2 Das Team
+            | {{>team}}
+            p
+                a(href='mailto:someone@tacpic.de?subject=Bitte eigenen Betreff einsetzen') Schreiben Sie uns!
+        .col-md-7
+            iframe(title='vimeo-player', src='https://player.vimeo.com/video/330785558', width='100%', height='auto', frameborder='0', allowfullscreen='')

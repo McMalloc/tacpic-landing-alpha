@@ -1,0 +1,52 @@
+body {
+  color: rgb(74, 74, 73);
+  margin: 0;
+  font-family: 'Roboto Regular', sans-serif;
+}
+
+h1 {
+  font-family: 'Quicksand Bold', sans-serif;
+  font-size: 35pt;
+  color: rgb(0, 48, 60);
+}
+
+h2 {
+  font-family: 'Quicksand Bold', sans-serif;
+  font-size: 25pt;
+  line-height: 30pt;
+  margin: 25px 0;
+  color: rgb(0, 48, 60);
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h3 {
+  font-family: 'Quicksand Bold', sans-serif;
+  margin-top: 0;
+  font-size: 14pt;
+  margin-bottom: 30px;
+  color: rgb(0, 48, 60);
+}
+
+p.lead-p {
+  font-family: 'Quicksand Bold', sans-serif;
+  font-size: 16pt;
+  line-height: 22pt;
+  color: RGB(0, 48, 60);
+}
+
+p {
+  color: rgb(77, 77, 79);
+  margin-top: 0;
+  font-size: 14pt;
+  line-height: 19.8pt;
+}
+
+nav a {
+  text-transform: uppercase;
+  font-size: 12pt;
+  color: white;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.7);
+}

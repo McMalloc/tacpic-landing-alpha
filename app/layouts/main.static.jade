@@ -1,0 +1,33 @@
+doctype html
+html.no-js(lang='')
+    head
+        meta(charset='utf-8')
+        title {{title}}
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        // <link rel="manifest" href="site.webmanifest">
+        link(rel='apple-touch-icon', href='../icon.png')
+        link(rel='stylesheet', href='app.css')
+        meta(name='theme-color', content='#fafafa')
+        script(src='vendor.js')
+        script(src='app.js')
+        script require('main');
+    body
+        // Add your site or application content here
+
+        main.wrapper
+            | {{content}}
+
+            footer
+                .container
+                    .row
+                        .col-6
+                            a(href='impressum.html') Impressum
+                            |  &emsp;
+                            a(href='datenschutz.html') Datenschutz
+                            |  &emsp;
+                            a(href='mailto:someone@tacpic.de?subject=Bitte eigenen Betreff einsetzen') Kontakt
+                            |  &emsp;
+                        .col-6.signet-wrapper
+                            a(href='http://www.europa.sachsen-anhalt.de', target='_blank')
+                                img(alt='Das Projekt tacpic wird vom Land Sachsen-Anhalt unterstützt und aus Mittel des Europäischen Sozialfonds mitfinanziert.', src='img/esf-signetpaar.svg')
