@@ -23,6 +23,8 @@ exports.files = {
     }
 };
 
+exports.server = { hostname: '0.0.0.0', };
+
 exports.plugins = {
     babel: {presets: ['latest']},
     "static": {
@@ -39,6 +41,27 @@ exports.plugins = {
                 minify: ""
             })
         ]
+    },
+
+    terser: {
+        mangle: true,
+        compress: {
+            global_defs: {
+                DEBUG: false
+            }
+        }
+    },
+
+    cssnano: {
+        preset: [
+            'default',
+            {
+                autoprefixer: {
+                    add: true
+                }
+            }
+        ]
     }
+
 
 };

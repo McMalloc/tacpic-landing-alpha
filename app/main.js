@@ -1,7 +1,15 @@
 const $ = require("jquery");
 
+let baseHeight = 0;
+let baseLogoTop = 0;
+
 $( document ).ready(() => {
+
+    const header = $("header");
+    const logo = $(".logo-container");
     console.log( "ready!" );
+    baseHeight = parseInt(header.height());
+    baseLogoTop = parseInt(logo.css("top"));
 
     $("#show-more-btn").on('click', e => {
         $(e.target).addClass("hidden");
@@ -10,15 +18,10 @@ $( document ).ready(() => {
            .css("opacity", 1);
     });
 
-    // $("#mc-embedded-subscribe").on('click', e => {
-    //     var isValid = $(e.target).parents('form').isValid();
-    //     if(!isValid) {
-    //         e.preventDefault(); //prevent the default action
-    //     }
-    // });
-    //
-    // $("#gdpr_45773").on('change', e => {
-    //     console.log("checked");
-    //     $("#mc-embedded-subscribe").prop("disabled", !$(e.target).is(':checked'));
-    // })
+    $(document).scroll(event => {
+        $(".key-visual-container").css("margin-top", window.scrollY*0.5);
+        header.css("height", baseHeight);
+        console.log(baseLogoTop);
+        logo.css("top", baseLogoTop+(window.scrollY*0.3));
+    });
 });

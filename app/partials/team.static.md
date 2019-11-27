@@ -1,2 +1,2 @@
-Das Projekt, gefördert von der Investitionsbank Sachsen-Anhalt, bietet ein Angebot um allen die Möglichkeit zu geben, taktile
+Das Team aus einer Absolventin und zwei Absolventen der Hochschule Magdeburg-Stendal möchte allen die Möglichkeit geben, taktile
 Grafiken zu gestalten und anderen zugänglich zu machen.

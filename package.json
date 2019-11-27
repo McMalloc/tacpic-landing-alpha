@@ -19,10 +19,11 @@
     "brunch": "^2",
     "brunch-static": "^1.2.3",
     "clean-css-brunch": "^2",
+    "cssnano-brunch": "^1.2.1",
     "html-brunch-static": "^1.4.1",
     "jade-brunch-static": "^1.1.1",
     "marked-brunch-static": "^1.1.1",
     "sass-brunch": "^2.10.8",
-    "uglify-js-brunch": "^2"
+    "terser-brunch": "^3.0.0"
   }
 }

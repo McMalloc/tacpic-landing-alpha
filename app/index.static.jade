@@ -17,18 +17,19 @@ _options:
 | {{>header}}
 section.container
     .row
-        .col-md-5
+        #intro.col-md-5
             p.lead-p {{>claim}}
             | {{>intro}}
             p
-                button#show-more-btn Mehr erfahren
-        .col-md-7.iframe-container
-            iframe(title='vimeo-player', src='https://player.vimeo.com/video/330785558', width='100%', height='auto', frameborder='0', allowfullscreen='')
+                button#show-more-btn(aria-label="Mehr erfahren") Mehr erfahren
+        .col-md-7(aria-label="Konzeptvideo starten", tabindex=0)
+            video(src='img/konzept_tacpic.mp4', controls='true', poster='img/thumbnail.png')
+            //iframe(title='vimeo-player', src='https://player.vimeo.com/video/330785558', width='100%', height='auto', frameborder='0', allowfullscreen='')
     #show-more.row.hidden
-        .col-md-8.offset-md-2 {{>more}}
+        .col-md-5 {{>more}}
 section.container-fluid(style='padding: 0 15px;')
     .row
-        img(src='img/eye.jpg')
+        img(src='img/eye.jpg', alt="", role="presentation")
 section.container
     .row
         .col-md-12
@@ -36,15 +37,15 @@ section.container
     .row
         .col-md-4
             .feature-image
-                img(src='img/circe.svg')
+                img(src='img/icon_community.svg', alt="", role="presentation")
             | {{>feature1}}
         .col-md-4
             .feature-image
-                img(src='img/circe.svg')
+                img(src='img/icon_netzwerk.svg', alt="", role="presentation")
             | {{>feature2}}
         .col-md-4
             .feature-image
-                img(src='img/circe.svg')
+                img(src='img/icon_guenstig.svg', alt="", role="presentation")
             | {{>feature3}}
 section.container-fluid.accent(style='text-align: center; padding: 150px 15px;')
     .row
@@ -53,6 +54,11 @@ section.container-fluid.accent(style='text-align: center; padding: 150px 15px;')
             p Möchten Sie, dass wir Sie über den Start unseres Services informieren?
                 .col-md-6.col-sm-8.offset-md-3.offset-sm-2(style='text-align: left;')
                     | {{>newsletter}}
+section.container-fluid(style='padding: 0 15px;')
+    .row(style="position: relative")
+        img(src='img/qa.jpg', alt="", role="presentation")
+        small(style="position: absolute; right: 3px; bottom: 3px") Foto von&nbsp;
+            a(href="https://www.nilzboehme.de/") Nilz Böhme
 section.container
     .row
         .col-md-5
@@ -60,5 +66,8 @@ section.container
             | {{>team}}
             p
                 a(href='mailto:someone@tacpic.de?subject=Bitte eigenen Betreff einsetzen') Schreiben Sie uns!
-        .col-md-7
-            iframe(title='vimeo-player', src='https://player.vimeo.com/video/330785558', width='100%', height='auto', frameborder='0', allowfullscreen='')
+        .col-md-7.iframe-container
+            iframe(title='vimeo-player', src='https://www.youtube.com/embed/-HUqk2zYi54', width='100%', height='auto', frameborder='0', allowfullscreen='')
+            p(style="text-align: right")
+              small Film von&nbsp;
+                a(href="https://www.lichtempfindlich.org/") lichtempfindlich

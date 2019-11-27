@@ -1,11 +1,66 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  body {
+    background-color: white!important;
+  }
+
+  header {
+    height: auto;
+  }
+
+  .key-visual-container {
+    display: none;
+  }
+
+  .logo-container {
+    position: static;
+  }
+
+  #to-intro {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   p {
     font-size: 12pt;
   }
 
+  .feature-image {
+    padding: 12px;
+  }
+
   .wrapper {
     margin: 12px;
   }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-container {
+    max-width: 70vw;
+    top: 15vw;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .feature-image {
+    padding: 36px;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  header {
+    height: 90vh;
+    overflow-y: hidden;
+  }
+
+
+  .logo-container {
+      top: 35vh;
+      max-width: 700px;
+    }
 }
 
 @media print,

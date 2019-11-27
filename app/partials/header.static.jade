@@ -1,7 +1,10 @@
-header
+header#header
     .key-visual-container
-        img.key-visual(src='img/key.jpg')
-    //nav
-    //    a Über
-    //    a Kontakt
-    img.logo(src='img/logo.svg')
+        img.key-visual(src='img/key.jpg', alt="", role="presentation")
+    .logo-container
+        img.logo(src='img/logo.svg', alt="Tacpic Logo")
+        p.claim Ertastbare Grafiken
+            br
+            | für blinde und sehbehinderte Menschen
+        a#to-intro.hide-mobile(href="#intro", aria-label="Zum Einstiegstext springen")
+            img(src='img/arrow-down.svg')
